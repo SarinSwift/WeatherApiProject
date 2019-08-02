@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct City {
+struct City: Codable {
     
 }

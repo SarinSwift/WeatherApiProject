@@ -16,6 +16,7 @@
 		04F4ADBB22F4A31300754781 /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4ADBA22F4A31300754781 /* ServiceLayer.swift */; };
 		04F4ADBD22F4A31C00754781 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4ADBC22F4A31C00754781 /* Router.swift */; };
 		04F4ADBF22F4AAB300754781 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4ADBE22F4AAB300754781 /* City.swift */; };
+		04F4ADC122F4CDE000754781 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4ADC022F4CDE000754781 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		04F4ADBA22F4A31300754781 /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
 		04F4ADBC22F4A31C00754781 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		04F4ADBE22F4AAB300754781 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		04F4ADC022F4CDE000754781 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				04F4ADBA22F4A31300754781 /* ServiceLayer.swift */,
 				04F4ADBC22F4A31C00754781 /* Router.swift */,
 				04F4ADBE22F4AAB300754781 /* City.swift */,
+				04F4ADC022F4CDE000754781 /* LocationManager.swift */,
 			);
 			path = OpenWeatherMap;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				04F4ADA722F49B8B00754781 /* ViewController.swift in Sources */,
 				04F4ADA522F49B8B00754781 /* AppDelegate.swift in Sources */,
 				04F4ADBF22F4AAB300754781 /* City.swift in Sources */,
+				04F4ADC122F4CDE000754781 /* LocationManager.swift in Sources */,
 				04F4ADBD22F4A31C00754781 /* Router.swift in Sources */,
 				04F4ADB922F4A18B00754781 /* Constants.swift in Sources */,
 				04F4ADBB22F4A31300754781 /* ServiceLayer.swift in Sources */,
