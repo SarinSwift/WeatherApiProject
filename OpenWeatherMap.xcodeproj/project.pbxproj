@@ -17,6 +17,7 @@
 		04F4ADBD22F4A31C00754781 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4ADBC22F4A31C00754781 /* Router.swift */; };
 		04F4ADBF22F4AAB300754781 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4ADBE22F4AAB300754781 /* City.swift */; };
 		04F4ADC122F4CDE000754781 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4ADC022F4CDE000754781 /* LocationManager.swift */; };
+		04F4ADC722F4E78D00754781 /* DisplayTempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4ADC622F4E78D00754781 /* DisplayTempViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		04F4ADBC22F4A31C00754781 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		04F4ADBE22F4AAB300754781 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		04F4ADC022F4CDE000754781 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		04F4ADC622F4E78D00754781 /* DisplayTempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTempViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,18 +67,51 @@
 			isa = PBXGroup;
 			children = (
 				04F4ADA422F49B8B00754781 /* AppDelegate.swift */,
+				04F4ADC322F4D98000754781 /* ViewControllers */,
+				04F4ADC222F4D97500754781 /* Models */,
 				04F4ADB822F4A18B00754781 /* Constants.swift */,
-				04F4ADA622F49B8B00754781 /* ViewController.swift */,
-				04F4ADA822F49B8B00754781 /* Main.storyboard */,
-				04F4ADAB22F49B8C00754781 /* Assets.xcassets */,
-				04F4ADAD22F49B8C00754781 /* LaunchScreen.storyboard */,
-				04F4ADB022F49B8C00754781 /* Info.plist */,
-				04F4ADBA22F4A31300754781 /* ServiceLayer.swift */,
-				04F4ADBC22F4A31C00754781 /* Router.swift */,
-				04F4ADBE22F4AAB300754781 /* City.swift */,
 				04F4ADC022F4CDE000754781 /* LocationManager.swift */,
+				04F4ADBE22F4AAB300754781 /* City.swift */,
+				04F4ADC422F4D98E00754781 /* StoryBoards */,
+				04F4ADAB22F49B8C00754781 /* Assets.xcassets */,
+				04F4ADC522F4D9A300754781 /* NetworkLayer */,
+				04F4ADB022F49B8C00754781 /* Info.plist */,
 			);
 			path = OpenWeatherMap;
+			sourceTree = "<group>";
+		};
+		04F4ADC222F4D97500754781 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04F4ADC322F4D98000754781 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04F4ADA622F49B8B00754781 /* ViewController.swift */,
+				04F4ADC622F4E78D00754781 /* DisplayTempViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		04F4ADC422F4D98E00754781 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				04F4ADAD22F49B8C00754781 /* LaunchScreen.storyboard */,
+				04F4ADA822F49B8B00754781 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		04F4ADC522F4D9A300754781 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				04F4ADBA22F4A31300754781 /* ServiceLayer.swift */,
+				04F4ADBC22F4A31C00754781 /* Router.swift */,
+			);
+			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +190,7 @@
 				04F4ADBF22F4AAB300754781 /* City.swift in Sources */,
 				04F4ADC122F4CDE000754781 /* LocationManager.swift in Sources */,
 				04F4ADBD22F4A31C00754781 /* Router.swift in Sources */,
+				04F4ADC722F4E78D00754781 /* DisplayTempViewController.swift in Sources */,
 				04F4ADB922F4A18B00754781 /* Constants.swift in Sources */,
 				04F4ADBB22F4A31300754781 /* ServiceLayer.swift in Sources */,
 			);

@@ -9,5 +9,17 @@
 import Foundation
 
 struct City: Codable {
+    var main: MainObj
+}
+
+struct MainObj: Codable {
+    var temp: Float
+    var tempMin: Float
+    var tempMax: Float
     
+    enum CodingKeys: String, CodingKey {
+        case temp
+        case tempMin = "temp_min"
+        case tempMax = "temp_max"
+    }
 }

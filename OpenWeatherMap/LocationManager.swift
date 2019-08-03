@@ -31,7 +31,6 @@ class LocationManager: NSObject {
 // MARK: - Core Location Delegate
 extension LocationManager: CLLocationManagerDelegate {
     
-    
     func locationManager(_ manager: CLLocationManager,
                          didChangeAuthorization status: CLAuthorizationStatus) {
         
