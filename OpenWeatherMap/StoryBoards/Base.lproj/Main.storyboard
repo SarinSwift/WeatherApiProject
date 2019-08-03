@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nc-zm-rkI">
-                                <rect key="frame" x="124" y="250.5" width="166" height="44"/>
+                                <rect key="frame" x="62" y="692" width="290" height="44"/>
                                 <color key="backgroundColor" red="0.078431372550000003" green="0.66666666669999997" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="gsr-oA-jqV"/>
@@ -27,15 +27,20 @@
                                 <state key="normal" title="Check the weather!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="checkWeatherBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="co9-b0-sHp"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="openWeatherImage" translatesAutoresizingMaskIntoConstraints="NO" id="r8s-a3-TyP">
-                                <rect key="frame" x="182" y="736" width="50" height="50"/>
+                                <rect key="frame" x="192" y="756" width="30" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="9Ol-9J-Cgz"/>
-                                    <constraint firstAttribute="width" constant="50" id="Mnz-5f-7P6"/>
+                                    <constraint firstAttribute="height" constant="30" id="9Ol-9J-Cgz"/>
+                                    <constraint firstAttribute="width" constant="30" id="Mnz-5f-7P6"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered By OpenWeatherMap Api" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7w-Ap-N0c">
@@ -59,13 +64,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="7Nc-zm-rkI" firstAttribute="top" secondItem="Usm-ke-PIg" secondAttribute="bottom" constant="30" id="SAl-uC-deT"/>
+                            <constraint firstItem="r8s-a3-TyP" firstAttribute="top" secondItem="7Nc-zm-rkI" secondAttribute="bottom" constant="20" id="FJt-Hq-e2B"/>
                             <constraint firstItem="Usm-ke-PIg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Tj4-bD-Ve7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g7w-Ap-N0c" secondAttribute="bottom" constant="30" id="W71-4C-n9S"/>
                             <constraint firstItem="g7w-Ap-N0c" firstAttribute="top" secondItem="r8s-a3-TyP" secondAttribute="bottom" constant="25" id="Ztf-R5-3N8"/>
                             <constraint firstItem="7Nc-zm-rkI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bBx-yU-wYW"/>
                             <constraint firstItem="JRY-4J-XKG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="d3f-P0-InC"/>
-                            <constraint firstItem="7Nc-zm-rkI" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="eRM-PI-JRE"/>
+                            <constraint firstItem="7Nc-zm-rkI" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="eRM-PI-JRE"/>
                             <constraint firstItem="g7w-Ap-N0c" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gjN-Ja-CeP"/>
                             <constraint firstItem="Usm-ke-PIg" firstAttribute="top" secondItem="JRY-4J-XKG" secondAttribute="bottom" constant="15" id="mRd-og-Wjf"/>
                             <constraint firstItem="JRY-4J-XKG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rJs-kc-tg2"/>
