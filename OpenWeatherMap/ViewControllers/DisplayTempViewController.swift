@@ -9,6 +9,9 @@
 import UIKit
 
 class DisplayTempViewController: UIViewController {
+    
+    var maxTempText: String!
+    var minTempText: String!
 
     @IBOutlet weak var maximumTempLabel: UILabel!
     @IBOutlet weak var minimumTempLabel: UILabel!
@@ -17,9 +20,12 @@ class DisplayTempViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        maximumTempLabel.text = maxTempText
+        minimumTempLabel.text = minTempText
     }
 
     @IBAction func saveBtnTapped(_ sender: UIButton) {
+        // Save the user's mood before dismissing view controller
+        self.dismiss(animated: true, completion: nil)
     }
 }

@@ -41,6 +41,23 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
 
     @IBAction func checkWeatherBtnTapped(_ sender: UIButton) {
+        guard let name = cityNameLabel.text else {
+            print("City name incorrect")
+            return
+        }
+        ServiceLayer.requestWeather(city: name, router: Router.getCityWeather(cityName: name)) { (result: Result<City, Error>) in
+            switch result {
+            case .failure:
+                print("ERORR: \(result)")
+            case .success(let object):
+                print("SUCCESS: \(result)")
+                let sb = UIStoryboard(name: "Main", bundle: nil)
+                let displayVC = sb.instantiateViewController(withIdentifier: "displayTempId") as! DisplayTempViewController
+                displayVC.maxTempText = String(object.main.tempMax)
+                displayVC.minTempText = String(object.main.tempMin)
+                self.present(displayVC, animated: true, completion: nil)
+            }
+        }
         
     }
     

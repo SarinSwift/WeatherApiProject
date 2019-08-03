@@ -9,7 +9,7 @@
 import Foundation
 
 class ServiceLayer {
-    class func requestWeather(city: String, router: Router, completion: @escaping (Result<[String: [City]], Error>) -> ()) {
+    class func requestWeather(city: String, router: Router, completion: @escaping (Result<City, Error>) -> ()) {
         
         // create components
         var components = URLComponents()
@@ -43,7 +43,7 @@ class ServiceLayer {
             }
             
             // decode the json object from the data
-            let object = try! JSONDecoder().decode([String: [City]].self, from: data)
+            let object = try! JSONDecoder().decode(City.self, from: data)
             DispatchQueue.main.async {
                 completion(.success(object))
             }

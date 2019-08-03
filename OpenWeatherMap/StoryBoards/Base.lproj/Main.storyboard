@@ -86,7 +86,7 @@
         <!--Display Temp View Controller-->
         <scene sceneID="EGF-ym-d7z">
             <objects>
-                <viewController id="kt1-q2-HwG" customClass="DisplayTempViewController" customModule="OpenWeatherMap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="displayTempId" id="kt1-q2-HwG" customClass="DisplayTempViewController" customModule="OpenWeatherMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dc2-do-9jc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,78 +194,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Icd-Yb-loI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2102.898550724638" y="137.94642857142856"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="fdw-il-3na">
-            <objects>
-                <viewController id="v0n-1B-Xyb" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xSa-lP-HST">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KIa-MB-x61">
-                                <rect key="frame" x="20.5" y="229" width="373" height="448"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qv-pJ-GQP">
-                                        <rect key="frame" x="75" y="81" width="45" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Happy">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LE-Dz-M8u">
-                                        <rect key="frame" x="238" y="81" width="51" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Neutral">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plk-0x-lgE">
-                                        <rect key="frame" x="82" y="168" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Sad">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1p4-cd-n9g">
-                                        <rect key="frame" x="226" y="168" width="74" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Depressed">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntf-EA-han">
-                                        <rect key="frame" x="103.5" y="369" width="166" height="44"/>
-                                        <color key="backgroundColor" red="0.078431372550000003" green="0.66666666669999997" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="r0c-W3-LDL"/>
-                                        </constraints>
-                                        <state key="normal" title="Select">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="ntf-EA-han" firstAttribute="centerX" secondItem="KIa-MB-x61" secondAttribute="centerX" id="awq-Ic-15d"/>
-                                    <constraint firstAttribute="bottom" secondItem="ntf-EA-han" secondAttribute="bottom" constant="35" id="hBV-By-LzO"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="KIa-MB-x61" firstAttribute="centerY" secondItem="r8j-ef-d9L" secondAttribute="centerY" id="2gJ-F0-RaW"/>
-                            <constraint firstItem="KIa-MB-x61" firstAttribute="centerX" secondItem="r8j-ef-d9L" secondAttribute="centerX" id="MuZ-Ma-JsM"/>
-                            <constraint firstItem="KIa-MB-x61" firstAttribute="width" secondItem="xSa-lP-HST" secondAttribute="width" multiplier="0.9" id="gg0-tp-zWw"/>
-                            <constraint firstItem="KIa-MB-x61" firstAttribute="height" secondItem="xSa-lP-HST" secondAttribute="height" multiplier="0.5" id="mpH-8l-JQB"/>
-                            <constraint firstItem="ntf-EA-han" firstAttribute="width" secondItem="xSa-lP-HST" secondAttribute="width" multiplier="0.4" id="vaG-rN-2BW"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="r8j-ef-d9L"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JOJ-mC-prI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2875.36231884058" y="136.60714285714286"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="276-0k-Iqi">
